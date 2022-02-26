@@ -1,0 +1,139 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    font-family: 'Nunito Sans', sans-serif;
+}
+
+body
+{
+    background: #FFFAF5;
+    overflow-x: hidden;
+    position: absolute;
+}
+
+h1
+{
+    font-weight: 800;
+    font-style: italic;
+    font-size: 8vw;
+    color: #F15A69;
+}
+
+p
+{
+    font-weight: 400;
+    font-size: 1.5vw;
+    color: #000;
+}
+
+.pink
+{
+    color: #F15A69;
+}
+
+.black
+{
+    color: #4B4545;
+}
+
+/* PART1 */
+
+.first-container
+{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.first-container .header
+{
+    width: 100%;
+    flex-wrap: wrap;
+    display: flex;
+    padding: 4vh 8vw ;
+}
+
+.first-container .header img
+{
+    width: 20%;
+    height: 20%;
+    padding: 0 2vw ;
+}
+
+.first-container .text-intro{
+    text-align: center;
+    padding: 2vh 24vw 12vh 24vw;
+}
+
+.first-container .intro .text-intro
+{
+    text-align: left;
+    width: 50%;
+    column-count: 2;
+    column-gap: 4vw;
+}
+
+.first-container .first-dataviz
+{
+    width: 100%;
+    height: auto;
+}
+
+.dataviz1 img
+{
+    width: 100vw;
+    height: auto;
+}
+
+.first-container .first-dataviz  .data-line
+{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 1vh 4vw;
+}
+
+.first-container .first-dataviz  .ratio-icon
+{
+    width: 6vh;
+    padding: 0 1vw;
+}
+
+.first-container .first-dataviz  .data-line h2
+{
+    font-weight: 400;
+    font-size: 2vw;
+    padding: 1vh 0 1vh;
+}
+
+
+/* PART2 */
+
+.second-container
+{
+    padding: 4vh 0 0 0;
+}
+
+.second-container .background-txt
+{
+    width: 64vw;
+    padding: 8vh 0 12vh 20vw;
+    opacity: 15%;
+}
+
+.p5Canvas {
+    z-index: -1;
+}
+
+/* RESPONSIVE */
+
+@media only screen and (max-width: 600px) {
+    p{
+    font-size: 2.8vw;
+    }
+    .first-container .intro .text-intro {
+        column-count: 1;
+    }
+  }
+
