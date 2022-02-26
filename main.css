@@ -124,6 +124,13 @@ p
 
 .p5Canvas {
     z-index: -1;
+    top: 200vh !important;
+}
+
+.megaphone{
+    position: absolute;
+    top: 250vh;
+    left: 0;
 }
 
 /* PART3 */
