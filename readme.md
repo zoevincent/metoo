@@ -1,42 +1,11 @@
-# p5 template project
+# Me too
+HETIC H4 Data design project
+by Anouk Hervouet, Myriam Abidonn, Sibylle Hervouet and Zoé Vincent
 
-## Installing
+## Dataset
+We choose this dataset : [https://www.kaggle.com/rahulgoel1106/hatred-on-twitter-during-metoo-movement](https://www.kaggle.com/rahulgoel1106/hatred-on-twitter-during-metoo-movement) which contains reactions on twitter following the #Metoo movement.
 
-- Install Node ([https://nodejs.org/](https://nodejs.org/)). Choose the LTS version (or the Current, it doesn't matter).
-- Install a good IDE if you don't have one already. I do highly recommend VS Code ([https://code.visualstudio.com/](https://code.visualstudio.com/)).
-- Download this repository (Use the green "Code" button at the top of the page -> "Download ZIP")
-- Extract the ZIP you just downloaded
-- Open the extracted folder in your IDE (like VS Code)
-- Open a terminal at the root of the folder (you can do it in VS Code by simply dragging up the bottom of the window) and type the following command :
+We took a sample of 100 data to make 2 graphical representations of the data: the megaphone and the display of tweets. This sample is available here in json format : [https://api.jsonbin.io/b/61fd01f04ce71361b8cde1a3](https://api.jsonbin.io/b/61fd01f04ce71361b8cde1a3).
 
-For Windows :
-```
-npm i -g npm-run-all typescript browser-sync
-```
-
-For Linux and Mac :
-```
-sudo npm i -g npm-run-all typescript browser-sync
-```
-
-Only use this command the first time you ever use this template (-g means you install things globally)
-
-### Launching
-
-Whenever you want to work on your project, simply launch it with
-
-```
-npm start
-```
-
-A local version will now be running at [localhost:3000](http://localhost:3000)  
-You can now write all the p5 things you want in __*src/sketch.ts*__
-
-### Publishing online
-
-#### Using GitHub Pages
-
-Create a GitHub repository and commit all your files (if that's not already done)
-
-Then in the **Settings** of your repository, under **GitHub Pages** set Source to *main* and click Save.  
-If you scroll back down to **GitHub Pages** you can now see the url of your sketch ! (it might take a few minutes to be published online)
+## P5 template
+We used Jules Fouchy's p5 template available here : [https://github.com/JulesFouchy/p5Template](https://github.com/JulesFouchy/p5Template).
