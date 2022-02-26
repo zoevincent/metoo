@@ -118,12 +118,34 @@ p
 .second-container .background-txt
 {
     width: 64vw;
-    padding: 8vh 0 12vh 20vw;
+    padding: 8vh 0 0 20vw;
     opacity: 15%;
 }
 
 .p5Canvas {
     z-index: -1;
+}
+
+/* PART3 */
+
+footer .display-tweet{
+    position: absolute;
+    top: 290vh;
+    right: 1vw;
+}
+
+footer .tweet-text {
+    color: white;
+    width: 500px;
+    position: absolute;
+    top: 110px;
+    left: 220px;
+}
+
+.bottom-img{
+    position: absolute;
+    bottom: 0;
+    left: 0;
 }
 
 /* RESPONSIVE */
