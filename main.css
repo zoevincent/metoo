@@ -128,13 +128,13 @@ p
 
 /* PART3 */
 
-footer .display-tweet{
+.display-tweet{
     position: absolute;
     top: 290vh;
     right: 1vw;
 }
 
-footer .tweet-text {
+.tweet-text {
     color: white;
     width: 500px;
     position: absolute;
