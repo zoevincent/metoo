@@ -7,7 +7,7 @@ function setup() {
 }
 
 function windowResized() {
-    p6_ResizeCanvas()
+    p6_ResizeCanvas();
 }
 
 function preload() {
@@ -18,8 +18,9 @@ function preload() {
 function draw() {
     background(255, 250, 245);
     for (let i = 0; i < 100; i++) {
-        let r = random(600);
-        let m = map(4, r, 600, 0, 10)
+        let x = random(width);
+        let y = random(height);
+        let size = map(data[i].retweet_count, 0, 215, 20, 200)
         if (data[i].category == 1) {
             fill(colors[0]);
         }
@@ -27,6 +28,6 @@ function draw() {
             fill(colors[1]);
         }
         noStroke();
-        ellipse(r, height / 2, m);
+        ellipse(x, y, size);
     }
 }

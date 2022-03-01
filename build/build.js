@@ -1,7 +1,5 @@
 var data;
-var number;
-var ratio;
-var mycolor = ['#292D32', '#F15A69'];
+var colors = ['#292D32', '#F15A69'];
 function setup() {
     p6_CreateCanvas();
     noLoop();
@@ -10,35 +8,24 @@ function windowResized() {
     p6_ResizeCanvas();
 }
 function preload() {
-    var url = 'https://api.jsonbin.io/b/61fd01f04ce71361b8cde1a3';
+    var url = 'https://api.jsonbin.io/b/621e98ad7caf5d67835cdb18';
     data = loadJSON(url);
 }
 function draw() {
     background(255, 250, 245);
     for (var i = 0; i < 100; i++) {
-        var counter = data[i].favorite_count + data[i].retweet_count;
-        if (counter > counter * 0.75) {
-            var ratio = counter / 4;
-        }
-        else if (counter < counter * 0.25) {
-            var ratio = counter * 4;
-        }
-        else {
-            var ratio = counter;
-        }
-        var size = Math.round(ratio);
+        var x = random(width);
+        var y = random(height);
+        var size = map(data[i].retweet_count, 0, 215, 20, 200);
         if (data[i].category == 1) {
-            fill(mycolor[0]);
-            noStroke();
-            ellipse(i * size * random() * 2, i * size * random() / 2, size, size);
+            fill(colors[0]);
         }
         else if (data[i].category == 0) {
-            fill(mycolor[1]);
-            noStroke();
-            ellipse(i * size * random() * 2, i * size * random() / 2, size, size);
+            fill(colors[1]);
         }
+        noStroke();
+        ellipse(x, y, size);
     }
-    ellipse(30, 30, width / 50, height / 50);
 }
 var __ASPECT_RATIO = 1;
 var __MARGIN_SIZE = 25;
