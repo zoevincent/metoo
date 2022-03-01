@@ -1,7 +1,7 @@
 const tweetDisplay = document.querySelector('.tweet-text')
 let i = 1
 
-fetch("https://api.jsonbin.io/b/61fd01f04ce71361b8cde1a3")
+fetch("https://api.jsonbin.io/b/621e98ad7caf5d67835cdb18")
     .then(response => {
         return response.json()
     })

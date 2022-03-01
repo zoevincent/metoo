@@ -11,7 +11,7 @@ function windowResized() {
 }
 
 function preload() {
-    let url = 'https://api.jsonbin.io/b/61fd01f04ce71361b8cde1a3';
+    let url = 'https://api.jsonbin.io/b/621e98ad7caf5d67835cdb18';
     data = loadJSON(url);
 }
 
@@ -20,7 +20,6 @@ function draw() {
     for (let i = 0; i < 100; i++) {
         let r = random(600);
         let m = map(4, r, 600, 0, 10)
-        // controle data size 
         if (data[i].category == 1) {
             fill(colors[0]);
         }
